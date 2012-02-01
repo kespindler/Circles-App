@@ -11,7 +11,7 @@
 
 #define BITS_PER_COMPONENT 8
 #define BYTES_PER_PIXEL 4
-#define MIN_CIRCLE_DIAMETER 2
+#define MIN_CIRCLE_DIAMETER 3
 
 @implementation TouchView
 
@@ -79,8 +79,8 @@
     }
     if (!hitView) return;
     CGRect frame = hitView.frame;
-    CGFloat halfWidth = frame.size.width / 2;
-    CGFloat halfHeight = frame.size.height / 2;
+    int halfWidth = frame.size.width / 2;
+    int halfHeight = frame.size.height / 2;
     if (halfHeight < MIN_CIRCLE_DIAMETER || halfWidth < MIN_CIRCLE_DIAMETER) return;
     CGRect newFrame;
     newFrame.size.width = halfWidth;
@@ -97,12 +97,10 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-//    [super touchesBegan:touches withEvent:event];
     [self performTouchBehaviorForTouch:[touches anyObject]];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-//    [super touchesMoved:touches withEvent:event];
     [self performTouchBehaviorForTouch:[touches anyObject]];
 }
 

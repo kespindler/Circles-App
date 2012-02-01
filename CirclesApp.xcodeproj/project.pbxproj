@@ -21,6 +21,7 @@
 		45BA2AD314D91E5500C75D66 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2AD214D91E5500C75D66 /* TouchView.m */; };
 		45BA2AD614D91E5E00C75D66 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2AD514D91E5E00C75D66 /* Circle.m */; };
 		45BA2AD814D9254B00C75D66 /* SonOfMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2AD714D9254B00C75D66 /* SonOfMan.png */; };
+		45BA2ADA14D9368F00C75D66 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BA2AD914D9368F00C75D66 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		45BA2AD414D91E5E00C75D66 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 		45BA2AD514D91E5E00C75D66 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		45BA2AD714D9254B00C75D66 /* SonOfMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SonOfMan.png; sourceTree = "<group>"; };
+		45BA2AD914D9368F00C75D66 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BA2ADA14D9368F00C75D66 /* iAd.framework in Frameworks */,
 				45BA2AAE14D9194A00C75D66 /* UIKit.framework in Frameworks */,
 				45BA2AB014D9194A00C75D66 /* Foundation.framework in Frameworks */,
 				45BA2AB214D9194A00C75D66 /* CoreGraphics.framework in Frameworks */,
@@ -81,6 +84,7 @@
 		45BA2AAC14D9194A00C75D66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45BA2AD914D9368F00C75D66 /* iAd.framework */,
 				45BA2AAD14D9194A00C75D66 /* UIKit.framework */,
 				45BA2AAF14D9194A00C75D66 /* Foundation.framework */,
 				45BA2AB114D9194A00C75D66 /* CoreGraphics.framework */,
@@ -276,6 +280,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CirclesApp/CirclesApp-Prefix.pch";
 				INFOPLIST_FILE = "CirclesApp/CirclesApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -287,6 +292,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CirclesApp/CirclesApp-Prefix.pch";
 				INFOPLIST_FILE = "CirclesApp/CirclesApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

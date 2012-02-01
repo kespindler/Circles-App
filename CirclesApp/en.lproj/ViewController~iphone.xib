@@ -11,9 +11,10 @@
 			<string key="NS.object.0">933</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIView</string>
+			<string>IBADBannerView</string>
 			<string>IBUIImageView</string>
+			<string>IBUIView</string>
+			<string>IBProxyObject</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -35,13 +36,13 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="449736382">
+					<object class="IBUIImageView" id="335920491">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{0, -64}, {320, 480}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="65042681"/>
+						<reference key="NSNextKeyView" ref="786792936"/>
 						<string key="NSReuseIdentifierKey">_NS:567</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -50,10 +51,10 @@
 							<string key="NSResourceName">bkg_circles.jpg</string>
 						</object>
 					</object>
-					<object class="IBUIView" id="65042681">
+					<object class="IBUIView" id="786792936">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">264</int>
-						<string key="NSFrame">{{0, 96}, {320, 320}}</string>
+						<string key="NSFrame">{{0, 16}, {320, 320}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
@@ -65,11 +66,32 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
+					<object class="IBADBannerView" id="478835582">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">306</int>
+						<string key="NSFrame">{{0, 366}, {320, 50}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
+						<string key="NSReuseIdentifierKey">_NS:822</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">4</int>
+						<bool key="IBUIMultipleTouchEnabled">YES</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<set class="NSMutableSet" key="IBADRequiredContentSizeIdentifiers">
+							<string>ADBannerContentSize320x50</string>
+							<string>ADBannerContentSize480x32</string>
+						</set>
+						<set key="IBADModernRequiredContentSizeIdentifiers">
+							<string>ADBannerContentSizeLandscape</string>
+							<string>ADBannerContentSizePortrait</string>
+						</set>
+					</object>
 				</array>
 				<string key="NSFrame">{{0, 64}, {320, 416}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="449736382"/>
+				<reference key="NSNextKeyView" ref="335920491"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC43NQA</bytes>
@@ -118,9 +140,17 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">touchView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="65042681"/>
+						<reference key="destination" ref="786792936"/>
 					</object>
 					<int key="connectionID">14</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="478835582"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">16</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -146,19 +176,25 @@
 						<int key="objectID">6</int>
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="449736382"/>
-							<reference ref="65042681"/>
+							<reference ref="335920491"/>
+							<reference ref="478835582"/>
+							<reference ref="786792936"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
-						<reference key="object" ref="449736382"/>
+						<reference key="object" ref="335920491"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="65042681"/>
+						<reference key="object" ref="786792936"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">15</int>
+						<reference key="object" ref="478835582"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
@@ -168,6 +204,7 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.CustomClassName">TouchView</string>
@@ -177,7 +214,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">14</int>
+			<int key="maxID">16</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

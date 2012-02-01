@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iAd/ADBannerView.h"
 
 @class TouchView;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, ADBannerViewDelegate>
 
 @property (retain, nonatomic) IBOutlet TouchView *touchView;
+@property (nonatomic, retain) UIImagePickerController *imagePickerController;
 
 @end
