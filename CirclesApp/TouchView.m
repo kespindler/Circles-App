@@ -38,23 +38,23 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect {
-    [super drawRect:rect];
-    CGImageRef imageRef = self.sourceImage.CGImage;
-    NSUInteger width = CGImageGetWidth(imageRef);
-    NSUInteger height = CGImageGetHeight(imageRef);
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    NSUInteger bytesPerRow = BYTES_PER_PIXEL * width;
-    // Now your rawData contains the image data in the RGBA8888 pixel format.
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGColorSpaceRelease(colorSpace);
-    CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
-}
+//- (void)drawRect:(CGRect)rect {
+//    [super drawRect:rect];
+//    CGImageRef imageRef = self.sourceImage.CGImage;
+//    NSUInteger width = CGImageGetWidth(imageRef);
+//    NSUInteger height = CGImageGetHeight(imageRef);
+//    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+//    NSUInteger bytesPerRow = BYTES_PER_PIXEL * width;
+//    // Now your rawData contains the image data in the RGBA8888 pixel format.
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    CGColorSpaceRelease(colorSpace);
+//    CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
+//}
 
 - (void)resetView {
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-//    [self addSubview:[self circleForFrame:self.bounds]];
-    [self setNeedsDisplay];
+    [self addSubview:[self circleForFrame:self.bounds]];
+//    [self setNeedsDisplay];
 }
 
 - (void)setSourceImage:(UIImage *)sourceImage {
