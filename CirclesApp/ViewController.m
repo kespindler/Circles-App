@@ -7,58 +7,48 @@
 //
 
 #import "ViewController.h"
+#import "TouchView.h"
 
 @implementation ViewController
 
-- (void)didReceiveMemoryWarning
-{
+@synthesize touchView;
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UIBarButtonItem *barItem1 = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(loadNewImageButtonPressed)] autorelease];
+    self.navigationItem.leftBarButtonItem = barItem1;
+    UIBarButtonItem *barItem2 = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(resetButtonPressed)] autorelease];
+    self.navigationItem.rightBarButtonItem = barItem2;
+    self.touchView.sourceImage = [UIImage imageNamed:@"SonOfMan.png"];
 }
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
+    [self setTouchView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+- (void)loadNewImageButtonPressed {
+    
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+- (void)resetButtonPressed {
+    [self.touchView resetView];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return IS_IPHONE ? (interfaceOrientation == UIInterfaceOrientationPortrait) : YES;
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
+- (void)dealloc {
+    [touchView release];
+    [super dealloc];
 }
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
-}
-
 @end

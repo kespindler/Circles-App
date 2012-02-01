@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TouchView;
+
 @interface ViewController : UIViewController
+
+@property (retain, nonatomic) IBOutlet TouchView *touchView;
 
 @end
