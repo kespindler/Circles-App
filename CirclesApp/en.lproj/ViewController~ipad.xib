@@ -36,13 +36,13 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="77058097">
+					<object class="IBUIImageView" id="974000790">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrameSize">{768, 1004}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="1026155300"/>
+						<reference key="NSNextKeyView" ref="495859097"/>
 						<string key="NSReuseIdentifierKey">_NS:567</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -51,13 +51,13 @@
 							<string key="NSResourceName">bkg_circles.jpg</string>
 						</object>
 					</object>
-					<object class="IBUIView" id="1026155300">
+					<object class="IBUIView" id="495859097">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{0, 118}, {768, 768}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="802366741"/>
+						<reference key="NSNextKeyView" ref="476543759"/>
 						<string key="NSReuseIdentifierKey">_NS:196</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -66,7 +66,7 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
-					<object class="IBADBannerView" id="802366741">
+					<object class="IBADBannerView" id="476543759">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">266</int>
 						<string key="NSFrame">{{0, 946}, {768, 66}}</string>
@@ -92,7 +92,7 @@
 				<string key="NSFrame">{{0, 20}, {768, 1004}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="77058097"/>
+				<reference key="NSNextKeyView" ref="974000790"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -119,7 +119,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="802366741"/>
+						<reference key="source" ref="476543759"/>
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">8</int>
@@ -148,26 +148,26 @@
 						<int key="objectID">2</int>
 						<reference key="object" ref="766721923"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="77058097"/>
-							<reference ref="1026155300"/>
-							<reference ref="802366741"/>
+							<reference ref="974000790"/>
+							<reference ref="495859097"/>
+							<reference ref="476543759"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">6</int>
-						<reference key="object" ref="1026155300"/>
+						<reference key="object" ref="495859097"/>
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
-						<reference key="object" ref="77058097"/>
+						<reference key="object" ref="974000790"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="802366741"/>
+						<reference key="object" ref="476543759"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 				</array>
