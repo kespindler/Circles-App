@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45BA2AAE14D9194A00C75D66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BA2AAD14D9194A00C75D66 /* UIKit.framework */; };
+		45BA2AB014D9194A00C75D66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BA2AAF14D9194A00C75D66 /* Foundation.framework */; };
+		45BA2AB214D9194A00C75D66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BA2AB114D9194A00C75D66 /* CoreGraphics.framework */; };
+		45BA2AB814D9194A00C75D66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2AB614D9194A00C75D66 /* InfoPlist.strings */; };
+		45BA2ABA14D9194A00C75D66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2AB914D9194A00C75D66 /* main.m */; };
+		45BA2ABE14D9194A00C75D66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2ABD14D9194A00C75D66 /* AppDelegate.m */; };
+		45BA2AC114D9194A00C75D66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2AC014D9194A00C75D66 /* ViewController.m */; };
+		45BA2AC414D9194A00C75D66 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2AC214D9194A00C75D66 /* ViewController_iPhone.xib */; };
+		45BA2AC714D9194A00C75D66 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2AC514D9194A00C75D66 /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45BA2AA914D9194A00C75D66 /* CirclesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirclesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45BA2AAD14D9194A00C75D66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		45BA2AAF14D9194A00C75D66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45BA2AB114D9194A00C75D66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		45BA2AB514D9194A00C75D66 /* CirclesApp-Info.plist */ = {isa = PBXFileReference; path = "CirclesApp-Info.plist"; sourceTree = "<group>"; };
+		45BA2AB714D9194A00C75D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45BA2AB914D9194A00C75D66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45BA2ABB14D9194A00C75D66 /* CirclesApp-Prefix.pch */ = {isa = PBXFileReference; path = "CirclesApp-Prefix.pch"; sourceTree = "<group>"; };
+		45BA2ABC14D9194A00C75D66 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		45BA2ABD14D9194A00C75D66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45BA2ABF14D9194A00C75D66 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		45BA2AC014D9194A00C75D66 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45BA2AC314D9194A00C75D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		45BA2AC614D9194A00C75D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45BA2AA614D9194A00C75D66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BA2AAE14D9194A00C75D66 /* UIKit.framework in Frameworks */,
+				45BA2AB014D9194A00C75D66 /* Foundation.framework in Frameworks */,
+				45BA2AB214D9194A00C75D66 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45BA2A9E14D9194A00C75D66 = {
+			isa = PBXGroup;
+			children = (
+				45BA2AB314D9194A00C75D66 /* CirclesApp */,
+				45BA2AAC14D9194A00C75D66 /* Frameworks */,
+				45BA2AAA14D9194A00C75D66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45BA2AAA14D9194A00C75D66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45BA2AA914D9194A00C75D66 /* CirclesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45BA2AAC14D9194A00C75D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45BA2AAD14D9194A00C75D66 /* UIKit.framework */,
+				45BA2AAF14D9194A00C75D66 /* Foundation.framework */,
+				45BA2AB114D9194A00C75D66 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45BA2AB314D9194A00C75D66 /* CirclesApp */ = {
+			isa = PBXGroup;
+			children = (
+				45BA2ABC14D9194A00C75D66 /* AppDelegate.h */,
+				45BA2ABD14D9194A00C75D66 /* AppDelegate.m */,
+				45BA2ABF14D9194A00C75D66 /* ViewController.h */,
+				45BA2AC014D9194A00C75D66 /* ViewController.m */,
+				45BA2AC214D9194A00C75D66 /* ViewController_iPhone.xib */,
+				45BA2AC514D9194A00C75D66 /* ViewController_iPad.xib */,
+				45BA2AB414D9194A00C75D66 /* Supporting Files */,
+			);
+			path = CirclesApp;
+			sourceTree = "<group>";
+		};
+		45BA2AB414D9194A00C75D66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45BA2AB514D9194A00C75D66 /* CirclesApp-Info.plist */,
+				45BA2AB614D9194A00C75D66 /* InfoPlist.strings */,
+				45BA2AB914D9194A00C75D66 /* main.m */,
+				45BA2ABB14D9194A00C75D66 /* CirclesApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45BA2AA814D9194A00C75D66 /* CirclesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45BA2ACA14D9194A00C75D66 /* Build configuration list for PBXNativeTarget "CirclesApp" */;
+			buildPhases = (
+				45BA2AA514D9194A00C75D66 /* Sources */,
+				45BA2AA614D9194A00C75D66 /* Frameworks */,
+				45BA2AA714D9194A00C75D66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CirclesApp;
+			productName = CirclesApp;
+			productReference = 45BA2AA914D9194A00C75D66 /* CirclesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45BA2AA014D9194A00C75D66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Brown University";
+			};
+			buildConfigurationList = 45BA2AA314D9194A00C75D66 /* Build configuration list for PBXProject "CirclesApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 45BA2A9E14D9194A00C75D66;
+			productRefGroup = 45BA2AAA14D9194A00C75D66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45BA2AA814D9194A00C75D66 /* CirclesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45BA2AA714D9194A00C75D66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BA2AB814D9194A00C75D66 /* InfoPlist.strings in Resources */,
+				45BA2AC414D9194A00C75D66 /* ViewController_iPhone.xib in Resources */,
+				45BA2AC714D9194A00C75D66 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45BA2AA514D9194A00C75D66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BA2ABA14D9194A00C75D66 /* main.m in Sources */,
+				45BA2ABE14D9194A00C75D66 /* AppDelegate.m in Sources */,
+				45BA2AC114D9194A00C75D66 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45BA2AB614D9194A00C75D66 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45BA2AB714D9194A00C75D66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		45BA2AC214D9194A00C75D66 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45BA2AC314D9194A00C75D66 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		45BA2AC514D9194A00C75D66 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45BA2AC614D9194A00C75D66 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45BA2AC814D9194A00C75D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45BA2AC914D9194A00C75D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45BA2ACB14D9194A00C75D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CirclesApp/CirclesApp-Prefix.pch";
+				INFOPLIST_FILE = "CirclesApp/CirclesApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		45BA2ACC14D9194A00C75D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CirclesApp/CirclesApp-Prefix.pch";
+				INFOPLIST_FILE = "CirclesApp/CirclesApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45BA2AA314D9194A00C75D66 /* Build configuration list for PBXProject "CirclesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45BA2AC814D9194A00C75D66 /* Debug */,
+				45BA2AC914D9194A00C75D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45BA2ACA14D9194A00C75D66 /* Build configuration list for PBXNativeTarget "CirclesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45BA2ACB14D9194A00C75D66 /* Debug */,
+				45BA2ACC14D9194A00C75D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45BA2AA014D9194A00C75D66 /* Project object */;
+}
