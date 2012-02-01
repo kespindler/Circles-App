@@ -22,6 +22,8 @@
 		45BA2AD614D91E5E00C75D66 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2AD514D91E5E00C75D66 /* Circle.m */; };
 		45BA2AD814D9254B00C75D66 /* SonOfMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2AD714D9254B00C75D66 /* SonOfMan.png */; };
 		45BA2ADA14D9368F00C75D66 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BA2AD914D9368F00C75D66 /* iAd.framework */; };
+		45BA2ADC14D942C600C75D66 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2ADB14D942C600C75D66 /* icon57.png */; };
+		45BA2ADE14D942CC00C75D66 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2ADD14D942CC00C75D66 /* icon114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		45BA2AD514D91E5E00C75D66 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		45BA2AD714D9254B00C75D66 /* SonOfMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SonOfMan.png; sourceTree = "<group>"; };
 		45BA2AD914D9368F00C75D66 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		45BA2ADB14D942C600C75D66 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		45BA2ADD14D942CC00C75D66 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 		45BA2A9E14D9194A00C75D66 = {
 			isa = PBXGroup;
 			children = (
+				45BA2ADD14D942CC00C75D66 /* icon114.png */,
+				45BA2ADB14D942C600C75D66 /* icon57.png */,
 				45BA2AB314D9194A00C75D66 /* CirclesApp */,
 				45BA2AAC14D9194A00C75D66 /* Frameworks */,
 				45BA2AAA14D9194A00C75D66 /* Products */,
@@ -181,6 +187,8 @@
 				45BA2ACE14D91A8C00C75D66 /* bkg_circles.jpg in Resources */,
 				45BA2AD014D91CCA00C75D66 /* reload_alt_24x28.png in Resources */,
 				45BA2AD814D9254B00C75D66 /* SonOfMan.png in Resources */,
+				45BA2ADC14D942C600C75D66 /* icon57.png in Resources */,
+				45BA2ADE14D942CC00C75D66 /* icon114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

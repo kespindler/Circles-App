@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Circle : UIView {
-@public
     CGFloat rgba[4];
 }
 
