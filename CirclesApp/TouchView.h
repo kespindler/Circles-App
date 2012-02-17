@@ -8,9 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef struct {
+    CGRect rect;
+    float rgba[4];
+} CircleStruct;
+
+@interface CircleObject : NSObject {
+    @public
+    CGRect rect;
+    CGFloat rgba[4];
+}
+
+@end
+
 @interface TouchView : UIView {
     TimeValue lastTime;
     unsigned char *rawData;
+    NSMutableArray *circleArray;
 }
 
 @property (nonatomic, retain) UIImage *sourceImage;

@@ -19,7 +19,6 @@
 		45BA2ACE14D91A8C00C75D66 /* bkg_circles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2ACD14D91A8C00C75D66 /* bkg_circles.jpg */; };
 		45BA2AD014D91CCA00C75D66 /* reload_alt_24x28.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2ACF14D91CCA00C75D66 /* reload_alt_24x28.png */; };
 		45BA2AD314D91E5500C75D66 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2AD214D91E5500C75D66 /* TouchView.m */; };
-		45BA2AD614D91E5E00C75D66 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2AD514D91E5E00C75D66 /* Circle.m */; };
 		45BA2AD814D9254B00C75D66 /* SonOfMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2AD714D9254B00C75D66 /* SonOfMan.png */; };
 		45BA2ADA14D9368F00C75D66 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BA2AD914D9368F00C75D66 /* iAd.framework */; };
 		45BA2ADC14D942C600C75D66 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BA2ADB14D942C600C75D66 /* icon57.png */; };
@@ -45,8 +44,6 @@
 		45BA2ACF14D91CCA00C75D66 /* reload_alt_24x28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload_alt_24x28.png; sourceTree = "<group>"; };
 		45BA2AD114D91E5500C75D66 /* TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
 		45BA2AD214D91E5500C75D66 /* TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
-		45BA2AD414D91E5E00C75D66 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
-		45BA2AD514D91E5E00C75D66 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		45BA2AD714D9254B00C75D66 /* SonOfMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SonOfMan.png; sourceTree = "<group>"; };
 		45BA2AD914D9368F00C75D66 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		45BA2ADB14D942C600C75D66 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
@@ -112,8 +109,6 @@
 				45BA2AC514D9194A00C75D66 /* ViewController~ipad.xib */,
 				45BA2AD114D91E5500C75D66 /* TouchView.h */,
 				45BA2AD214D91E5500C75D66 /* TouchView.m */,
-				45BA2AD414D91E5E00C75D66 /* Circle.h */,
-				45BA2AD514D91E5E00C75D66 /* Circle.m */,
 				45BA2AB414D9194A00C75D66 /* Supporting Files */,
 			);
 			path = CirclesApp;
@@ -203,7 +198,6 @@
 				45BA2ABE14D9194A00C75D66 /* AppDelegate.m in Sources */,
 				45BA2AC114D9194A00C75D66 /* ViewController.m in Sources */,
 				45BA2AD314D91E5500C75D66 /* TouchView.m in Sources */,
-				45BA2AD614D91E5E00C75D66 /* Circle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +321,7 @@
 				45BA2ACC14D9194A00C75D66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

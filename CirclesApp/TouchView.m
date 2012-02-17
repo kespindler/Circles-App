@@ -7,27 +7,31 @@
 //
 
 #import "TouchView.h"
-#import "Circle.h"
 
 #define BITS_PER_COMPONENT 8
 #define BYTES_PER_PIXEL 4
 #define MIN_CIRCLE_DIAMETER 3
 
+@implementation CircleObject
+
+@end
+
 @implementation TouchView
 
 @synthesize sourceImage = _sourceImage;
 
-- (Circle *)circleForFrame:(CGRect)frame {
+- (CircleObject *)initCircleForFrame:(CGRect)frame {
     int xx = frame.origin.x;
     int yy = frame.origin.y;
     int imageWidth = self.sourceImage.size.width;
     NSUInteger bytesPerRow = BYTES_PER_PIXEL * imageWidth;
     int byteIndex = (bytesPerRow * yy) + xx * BYTES_PER_PIXEL;
-    CGFloat rgba[4];
+    CircleObject *obj = [[CircleObject alloc] init];
     for (int i = 0; i < 4; i++) {
-        rgba[i] = (rawData[byteIndex + i] * 1.0) / 255.0;
+        obj->rgba[i] = (rawData[byteIndex + i] * 1.0) / 255.0;
     }
-    return [[[Circle alloc] initWithFrame:frame rbga:rgba] autorelease];
+    obj->rect = frame;
+    return obj;
 }
 
 - (id)initWithFrame:(CGRect)frame {
@@ -38,8 +42,19 @@
     return self;
 }
 
-//- (void)drawRect:(CGRect)rect {
-//    [super drawRect:rect];
+- (void)drawRect:(CGRect)rect {
+    [super drawRect:rect];
+//    CGContextRef ctx = UIGraphicsGetCurrentContext();
+//    CGContextSetRGBFillColor(ctx, rgba[0], rgba[1], rgba[2], rgba[3]);
+//    CGContextFillEllipseInRect(ctx, rect);
+
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    for (CircleObject *c in circleArray) {
+        if (CGRectContainsRect(rect, c->rect)) {
+            CGContextSetRGBFillColor(ctx, (c->rgba)[0], (c->rgba)[1], (c->rgba)[2], (c->rgba)[3]);
+            CGContextFillEllipseInRect(ctx, c->rect);
+        }
+    }
 //    CGImageRef imageRef = self.sourceImage.CGImage;
 //    NSUInteger width = CGImageGetWidth(imageRef);
 //    NSUInteger height = CGImageGetHeight(imageRef);
@@ -49,12 +64,15 @@
 //    CGContextRef context = UIGraphicsGetCurrentContext();
 //    CGColorSpaceRelease(colorSpace);
 //    CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
-//}
+}
 
 - (void)resetView {
-    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    [self addSubview:[self circleForFrame:self.bounds]];
-//    [self setNeedsDisplay];
+    if (!circleArray) circleArray = [[NSMutableArray alloc] initWithCapacity:1000];
+    [circleArray removeAllObjects];
+    CircleObject *firstCircle = [self initCircleForFrame:self.bounds];
+    [circleArray addObject:firstCircle];
+    [firstCircle release];
+    [self setNeedsDisplay];
 }
 
 - (void)setSourceImage:(UIImage *)sourceImage {
@@ -84,27 +102,32 @@
 - (void)performTouchBehaviorForTouch:(UITouch *)touch {
     if (CFAbsoluteTimeGetCurrent() - lastTime < 0.5f) return;
     CGPoint touchLocation = [touch locationInView:self];
-    UIView *hitView = nil;
-    for (UIView *v in self.subviews) {
-        if (CGRectContainsPoint(v.frame, touchLocation)) {
-            hitView = v;
+    CircleObject *hitCircle = nil;
+    for (CircleObject *c in circleArray) {
+        if (CGRectContainsPoint(c->rect, touchLocation)) {
+            hitCircle = c;
             break;
         }
     }
-    if (!hitView) return;
-    CGRect frame = hitView.frame;
+    if (!hitCircle) return;
+    CGRect frame = hitCircle->rect;
     int halfWidth = frame.size.width / 2;
     int halfHeight = frame.size.height / 2;
     if (halfHeight < MIN_CIRCLE_DIAMETER || halfWidth < MIN_CIRCLE_DIAMETER) return;
     CGRect newFrame;
     newFrame.size.width = halfWidth;
     newFrame.size.height = halfHeight;
-    if (hitView != self) [hitView removeFromSuperview];
+    [hitCircle retain];
+    [circleArray removeObject:hitCircle];
+    CircleObject *addCircle = nil;
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
             newFrame.origin.x = frame.origin.x + halfWidth * i;
             newFrame.origin.y = frame.origin.y + halfHeight * j;
-            [self addSubview:[self circleForFrame:newFrame]];
+            addCircle = [self initCircleForFrame:newFrame];
+            [circleArray addObject:addCircle];
+            [addCircle release];
+            [self setNeedsDisplayInRect:hitCircle->rect];
         }
     }
     lastTime = CFAbsoluteTimeGetCurrent(); 
