@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-typedef struct {
-    CGRect rect;
-    float rgba[4];
-} CircleStruct;
-
 @interface CircleObject : NSObject {
     @public
     CGRect rect;
