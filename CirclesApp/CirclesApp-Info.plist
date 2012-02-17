@@ -27,7 +27,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>Kurt-Spindler.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.kurtsp.circles</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

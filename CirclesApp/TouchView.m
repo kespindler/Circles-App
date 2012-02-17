@@ -83,6 +83,8 @@
     CGImageRef imageRef = self.sourceImage.CGImage;
     NSUInteger width = CGImageGetWidth(imageRef);
     NSUInteger height = CGImageGetHeight(imageRef);
+    width = self.frame.size.width;
+    height = self.frame.size.height * 2;
     free(rawData);
     rawData = malloc(height * width * BYTES_PER_PIXEL);
     
@@ -100,7 +102,10 @@
 }
 
 - (void)performTouchBehaviorForTouch:(UITouch *)touch {
-    if (CFAbsoluteTimeGetCurrent() - lastTime < 0.5f) return;
+    if (CFAbsoluteTimeGetCurrent() - lastTime < 0.3f) {
+        NSLog(@"returning");
+        return;
+    }
     CGPoint touchLocation = [touch locationInView:self];
     CircleObject *hitCircle = nil;
     for (CircleObject *c in circleArray) {
